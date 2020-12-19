@@ -11,6 +11,6 @@ A portfolio of my projects as a developer.
 https://derekmiller88.github.io/derekPortfolio/
 
 ## Contribution
-Made with ❤️ by Derek Miller
+Made by Derek Miller
 
 ### ©️2020 Miller, Inc. 

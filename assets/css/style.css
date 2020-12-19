@@ -184,6 +184,7 @@ body {
     display: flex;
     padding: 15px;
     align-items: flex-end;
+    position: relative;
 }
 
 .wrap-img {
@@ -193,29 +194,23 @@ body {
 .box1 {
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
-    position: relative;
     background-image: url(../images/runBuddyCap.jpg);
-    display: grid;
 }
 .box2 {
     grid-column: 1/ span 1;
     grid-row: 3/ span 1;
-    position: relative;
 }
 .box3 {
     grid-column: 2/ span 1;
     grid-row: 3/ span 1;
-    position: relative;
 }
 .box4 {
     grid-column: 3/ span 1;
     grid-row: 1/ span 1;
-    position: relative;
 }
 .box5 {
     grid-column: 3/ span 1;
     grid-row: 2/ span 1;
-    position: relative;
 }
 
 .my-work-wrapper {

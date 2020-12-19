@@ -1,3 +1,4 @@
+/* used for standardizing colors in website */
 :root {
     --primary-color: #020202;
     --secondary-color: #024e76;
@@ -12,7 +13,7 @@
   }
 
 /* HEADER / NAV BAR STYLES START */
-
+/* organized nav bar to top right and header title to top left */
 header {
     padding: 20px 35px;
     background-color: var(--secondary-color);
@@ -58,10 +59,10 @@ header {
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-  
+  /* hover effect to add styling to clickable links */
   header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--background-color);
@@ -72,6 +73,8 @@ header {
   /* HEADER / NAVBAR STYLES END */
 
   /* HERO STYLES START */
+  /* used a cool wood pannel stock photo as background image, 
+  i have my picture and welcome message stylized in a flexbox */
 .hero {
   background-image: url('../images/portfolioTopImage.jpeg');
   background-size: cover;
@@ -111,12 +114,13 @@ header {
 }
 
 /* HERO END */
-
+/* use an off-white color as background color for website */
 body {
     background-color: var(--background-color);
 }
 
 /* SECTION TITLE STYLES START */
+/* styled section titles to be standardized including border bar */
 .section-title {
     font-size: 48px;
     border-right: 3px solid;
@@ -138,7 +142,7 @@ body {
 
 
 /* about me STYLES */
-
+/* standardized layout of flexbox for each section ID */
 #about-me,
 #portfolio-of-projects,
 #contact-me
@@ -161,7 +165,10 @@ body {
   /* about me STYLES END */
 
 /* PORTFOLIO START */
-
+/* used grid layout here to display the projects that I've created
+made sure to set the first project to be 2x2 of the grid
+also set up reactive animations when the user hovers over the individual grid items
+also baked in links to projects for each grid item */
 .my-work-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -264,13 +271,13 @@ body {
   .project:hover .grid-item h3, .project:hover .grid-item h4 {
     top: 0;
   }
-
   
   /* portfolio STYLES END */
 
-
   /* Contact me start*/
-
+/* stylized the contact me section to mirror the 
+navigation bar at the top of the website 
+the items are clickable and include hover animations as well*/
 #contact-me a {
     text-decoration: none;
     color: var(--primary-color);
@@ -292,7 +299,7 @@ body {
   #contact-me nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
@@ -330,3 +337,192 @@ footer {
     color: var(--secondary-color);
   }
   /* END FOOTER STYLES */
+
+  /* Begin sizing change styles */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+
+    .section-title {
+    font-size: 2em;
+    border-right: 3px solid;
+    color: var(--secondary-color);
+    width: 15%;
+    text-align: Center;
+    margin-right: 3%;
+    }
+    
+#about-me,
+  #portfolio-of-projects,
+  #contact-me
+   {
+      display: flex;
+      align-items: center;
+      
+  }
+
+    .grid-item h3 {
+        position: relative;
+        z-index: 1;
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        top: 200px;
+        transition: 0.6s;
+        color: var(--background-color);
+      }
+      
+      .grid-item h4 {
+        position: relative;
+        z-index: 1;
+        font-size: 1.5em;
+        top: 200px;
+        transition: 0.6s;
+        transition-delay: .2s;
+        color: var(--background-color);
+      }
+  }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+
+    .section-title {
+    font-size: 2em;
+    border-bottom: 3px solid;
+    border-right: 0px solid;
+    color: var(--secondary-color);
+    width: 15%;
+    text-align: Center;
+    margin: auto auto 0.5em auto;
+    }
+    
+#about-me,
+  #portfolio-of-projects,
+  #contact-me
+   {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+  }
+
+    .grid-item h3 {
+        position: relative;
+        z-index: 1;
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        top: 200px;
+        transition: 0.6s;
+        color: var(--background-color);
+      }
+      
+      .grid-item h4 {
+        position: relative;
+        z-index: 1;
+        font-size: 1.5em;
+        top: 200px;
+        transition: 0.6s;
+        transition-delay: .2s;
+        color: var(--background-color);
+      }
+  }
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+  /* Set relative sizes for the major elements on the screen
+  This includes: header,
+  section titles,
+  flexboxes,
+  footer
+  titles in project grid items */
+@media screen and (max-width: 575px) {
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+
+.section-title {
+    font-size: 2em;
+    border-bottom: 3px solid;
+    border-right: 0px solid;
+    color: var(--secondary-color);
+    width: 15%;
+    text-align: Center;
+    margin: auto auto 0.5em auto;
+    }
+    
+#about-me,
+  #portfolio-of-projects,
+  #contact-me
+   {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+    .grid-item h3 {
+        position: relative;
+        z-index: 1;
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        top: 200px;
+        transition: 0.6s;
+        color: var(--background-color);
+      }
+      
+      .grid-item h4 {
+        position: relative;
+        z-index: 1;
+        font-size: 1.5em;
+        top: 200px;
+        transition: 0.6s;
+        transition-delay: .2s;
+        color: var(--background-color);
+      }
+  }
+  /* End sizing change styles */

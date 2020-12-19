@@ -1,6 +1,6 @@
 # Derek Miller's Portfolio
 
-![Screenshot of Challenge 1 website.](/assets/images/websiteScreenshot.PNG.jpg?raw=true "Derek Miller Portfolio screenshot")
+![Derek Miller Portfolio screenshot](/assets/images/websiteScreenshot.jpg?raw=true "Derek Miller Portfolio screenshot")
 
 ## Purpose
 To showcase a portfolio of my projects as a developer. Please view my projects to see if my skillset is what you're looking for!

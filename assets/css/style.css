@@ -223,7 +223,7 @@ also baked in links to projects for each grid item */
 .box5 {
     grid-column: 3/ span 1;
     grid-row: 2/ span 1;
-    background-image: url(../images/waterfall.jpg);
+    background-image: url(../images/passwordGenerator.jpg);
 }
 
 .my-work-wrapper {

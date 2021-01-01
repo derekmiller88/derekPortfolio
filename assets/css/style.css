@@ -152,6 +152,7 @@ body {
     display: flex;
     align-items: center;
     margin: 30px auto 30px auto;
+    scroll-margin-top: 5em;
 }
 
 .intro {
